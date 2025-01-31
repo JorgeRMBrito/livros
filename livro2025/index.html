@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/style.css">
+  
+  
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+    integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+  <title>HCAP-Dir.Adm.</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/logocbmerj-branco.png" width="50" height="50" alt="icone cbmerj">
+    <h5 class = "title">
+      HOSPITAL CENTRAL ARISTARCHO PESSOA
+    </h5>
+  </header>
+
+  <div class="sidebar">
+    <nav>
+      <div>
+        <i class="fi fi-rr-home"></i>
+        <span>
+          Menu Principal
+        </span>
+        <hr>
+      </div>
+      <ul>
+        <span>
+          Anotações Diárias
+        </span>
+        <li  onmouseover="destacar(this)" onmouseout="NaoDestacar(this)"  id = "test">
+          <a href="#" onclick="abreLink ('alter_of_pg1.html','iframe')">
+            Inserir Anotações
+          </a>
+        </li>
+        <li onmouseover="destacar(this)" onmouseout="NaoDestacar(this)" >
+          <a href="#" onclick="abreLink ('teste2.html','iframe')">
+            Ler Anotações
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <span>
+          Escalas de Serviço
+        </span>
+        <li onmouseover="destacar(this)" onmouseout="NaoDestacar(this)" >
+          <a href="">
+            Inserir Escala de Serviço
+          </a>
+        </li>
+        <li onmouseover="destacar(this)" onmouseout="NaoDestacar(this)">
+          <a   href="">
+            Ver Escala de Serviço
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <span>
+          Controle de Acesso
+        </span>
+        <li onmouseover="destacar(this)" onmouseout="NaoDestacar(this)" >
+          <a href="">
+            Estacionamento
+          </a>
+        </li>
+        <li onmouseover="destacar(this)" onmouseout="NaoDestacar(this)" >
+          <a href="">
+            Pedestres
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!--DIV DO IFRAME -->
+  <div class = "iframe" id  = "iframe">
+    
+  </div>
+  
+<script src="scripts/script.js"></script>
+  </body>
+  
+
+</html>

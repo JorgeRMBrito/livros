@@ -1,0 +1,139 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
+
+html {
+    overflow-x: hidden;
+    top: 0;
+    right: 0;
+    left: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFAFA;
+}
+
+header {
+   position: fixed;
+   height: 10vh;
+   width: 100%;
+   background-color: #B22222 ;
+   color: #ffffff;
+   font-size: 1.5em;
+   align-items: center; /*centraliza verticalmente*/
+   display: flex;
+   border-radius: 8px;
+   
+}
+
+
+nav {
+   padding-left: 2%;
+   
+}
+
+nav ul {
+   margin-top: 20px;
+   padding: 0px 0 5px 0px;
+   font-weight: 600;
+   
+     
+}
+
+nav ul li {
+   margin-top: 5px;
+   padding: 5px 0 0 20px;
+   display: flex;
+   justify-items: stretch;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    transform: translate(0, -25%);      
+}
+
+.sidebar {
+    position: fixed;
+    top: 10vh;
+    width: 20vw;
+    height: 90vh;
+    background-color: #333;
+    color: #ffffff;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+iframe {
+    position: fixed;
+    top: 10vh;
+    height: 89vh;
+    width: 78vw;
+    margin: 0 0 0 22vw;
+    padding-top: 3vh;
+    border-radius: 8px;
+    background-color: #FFFAFA;
+}
+
+/*JOGAR NA RESPONSIVIDADE*/
+.alteracao{
+    text-align: center;
+  
+}
+
+.alteracao__titulo{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.alteracao__subtitulo{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 800px) {
+    header {
+        font-size: 0.6em;
+        height: 7vh;
+    }
+
+    .title {
+        padding-left: 3px;
+    }
+    nav {
+        font-size: 0.5em;
+    }
+    nav ul li {
+        padding: 5px 0 0 3px;
+    }
+
+    nav ul li a {
+        transform: translate(0, -25%);
+    }
+
+    .sidebar {
+        margin-top: -22px;
+        width: 25vw;
+        padding: 1vh;
+        
+    }
+
+    iframe {
+        
+        width: 70vw;
+        margin: -22px 0 0 30vw;
+    }
+
+   
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
