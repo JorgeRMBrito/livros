@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/script.js"></script>
+
+    
+
+</head>
+
+<body>
+    <div class="alteracao">
+        <span class="alteracao__titulo">
+            Sistema de Anotações Diárias
+        </span>
+        <br>
+        <span class="alteracao__titulo">
+            Oficial de Dia
+        </span>
+        <br><br>
+        <span class="alteracao__subtitulo">
+            Preencha os campos abaixo
+        </span>
+    </div>
+    
+   
+    <div>
+        <form>
+            <div class = "form__container">
+                <label class = "form__container__label" id = "alter1" for="input">Alteração [1]</label>
+                <textarea class =  "form__container__input__alteracao" id = "alter1"type="text" name="alteracao" required ></textarea>
+            </div>
+
+            <div id="lines"></div>
+
+        </form>
+        <div class = "alinhado__direita">
+            <button class = "button__adicionar" type="button" onclick="addInput('lines')">Adicionar Campo</button>
+            <button class = "button__cancelar" type="button" onclick="removeInput('lines')" >Remover Campo</button>
+            <button class = "button__prosseguir" type="submit" formaction="teste.html">Prosseguir</button>
+           
+          </div>
+    </div>
+   
+
+</body>
+
+</html>

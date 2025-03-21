@@ -1,5 +1,6 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
 html {
     overflow-x: hidden;
@@ -25,8 +26,7 @@ header {
 
 
 nav {
-   padding-left: 2%;
-   
+   padding-left: 2%;   
 }
 
 nav ul {
@@ -76,32 +76,139 @@ iframe {
     background-color: #FFFAFA;
 }
 
-/*JOGAR NA RESPONSIVIDADE*/
-.alteracao{
+button{
+    color: #ffffff;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
     text-align: center;
-  
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    align-items: center;
+
 }
+
+/*FORMULÁRIOS*/
+
+
+form input {
+    width: 20vw;
+    border-radius: 5px;
+    border: 1px solid #B22222;
+    padding-bottom: 30px;
+    align-items: center;
+       
+}
+
+form input[type="radio"] {      
+    width: 17px;
+    margin-top: -5px;
+    
+}
+
+input[type="text"] {
+    padding: 10px;
+   
+}
+
+.form__container__radio {
+    display: grid;
+    grid-template-columns: 20vw 7vw 7vw 7vw;
+    padding-bottom: 20px;
+    
+    
+    
+}
+
+input[type="radio"] {
+    position:relative;
+    margin-left: 45px;
+    align-items: center;
+    
+}
+
+.form__container {
+    display: grid;
+    grid-template-columns: 15vw auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.form__container__input__alteracao{
+    width: 60vw;
+    
+    
+}
+
+.form__container__label {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*BOTÕES*/
+.alinhado__direita {
+    position: absolute;
+    right: 5vh;
+}
+
+.alinhado__centro {
+    text-align: center;
+}
+
+.button__adicionar {
+    background-color: #095FB4;
+    
+}
+
+.button__prosseguir {
+    background-color: #3CB371;
+    
+}
+
+.button__voltar {
+    background-color: #F4A460;	
+}
+
+.button__cancelar {
+    background-color: #B22222;
+}
+
+
+
+
+/*JOGAR NA RESPONSIVIDADE*/
+
 
 .alteracao__titulo{
     font-size: 1.5em;
     font-weight: 600;
+    
 }
 
 .alteracao__subtitulo{
     font-size: 1em;
     font-weight: 500;
+    
 }
 
-
-
+.alteracao{
+    text-align: center;
+}
 
 
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 800px) {
     header {
-        font-size: 0.6em;
-        height: 7vh;
+       height: 7vh;
+       font-size: .6em;
     }
 
     .title {
@@ -122,8 +229,14 @@ iframe {
         margin-top: -22px;
         width: 25vw;
         padding: 1vh;
+        font-size: 0.9em;
         
     }
+    .alteracao {
+        padding-top: -15px;
+        text-align: center;
+    }
+   
 
     iframe {
         
@@ -135,5 +248,40 @@ iframe {
     img {
         width: 30px;
         height: 30px;
+    }
+    /*FORMULARIOS*/
+    
+
+    form {
+        font-size: 0.6em;
+    }
+    form input {
+        width: 40vw;
+    }
+    
+    .form__container {
+        display: grid;
+        grid-template-columns: 40vw auto;
+    }
+    .form__container__label {
+        margin-top: 11px;
+    }
+    .form__container__radio {
+        display: grid;
+        grid-template-columns: 30vw 20vw 20vw 20vw;
+        padding-bottom: 20px;
+    }
+
+    input[type="radio"] {
+        position:relative;
+        margin-left: 25px;
+        align-items: center;
+        
+    }
+
+    button {
+        width: 20vw;
+        height: 5vh;
+        font-size: 0.8em;
     }
 }

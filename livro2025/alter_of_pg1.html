@@ -1,117 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link rel="stylesheet" href="style/style.css">
-    
+    <script src="scripts/dados.js"></script>
+
 </head>
-    <body>
-        <div class="alteracao">
-            <span class="alteracao__titulo">
-                Sistema de Anotações Diárias
-            </span>
-            <br>
-            <span class="alteracao__titulo">
-                Oficial de Dia
-            </span>
-            <br><br>
-            <span class="alteracao__subtitulo">
-                Preencha os campos abaixo
-            </span>
-        </div>
-        
-        <div>
-            <form>
-                <label for="input">Superior de Dia</label>
-                <input type="text" placeholder="Superior de Dia" name="sup_dia" required>
-        
-                <label for="input">Médico de de Dia</label>
-                <input type="text" placeholder="Médico de Dia" name="med_dia" required>
-        
-                <hr>
-        
-                <label for="input">Adjunto ao Oficial de Dia</label>
-                <input type="text" placeholder="Adjunto ao Oficial de Dia" name="adjunto" required>
-        
-                <label for="input">Comandante da Guarda</label>
-                <input type="text" placeholder="Comandante da Guarda" name="cmte_guarda" required>
-        
-                <label for="input">Encarregado de Motorista</label>
-                <input type="text" placeholder="Encarregadoo de Motorista" name="encarregado" required>
-        
-            
-        </div>
-        
-        <hr>
-        
-        <div>
-            
-                <div>
-                    <label for="input">Fornecimento de Energia Elétrica</label>
-                    <input type="radio" name="energia" value="opcao1" required>
-                    <label for="input">Operante</label>
-                    <input type="radio" name="energia" value="opcao2" required>
-                    <label for="input">Parcialmente Operante</label>
-                    <input type="radio" name="energia" value="opcao3" required>
-                    <label for="input">Inoperante</label>
+
+<body>
+    <div class="alteracao">
+        <span class="alteracao__titulo">
+            Sistema de Anotações Diárias
+        </span>
+        <br>
+        <span class="alteracao__titulo">
+            Oficial de Dia
+        </span>
+        <br><br>
+        <span class="alteracao__subtitulo">
+            Preencha os campos abaixo
+        </span>
+    </div>
+    
+   
+    <div>
+        <form>
+            <div>
+                <div class = "form__container" id = "formulario_1">
+                    <label class = "form__container__label" for="input">Superior de Dia</label>
+                    <input class =  "form__container__input" type="text" placeholder="Superior de Dia" id ="sup_dia" required>
                 </div>
-        
-                <div>
-                    <label for="input">Fornecimento de Água</label>
-                    <input type="radio" name="agua" value="opcao1" required>
-                    <label for="input">Operante</label>
-                    <input type="radio" name="agua" value="opcao2" required>
-                    <label for="input">Parcialmente Operante</label>
-                    <input type="radio" name="agua" value="opcao3" required>
-                    <label for="input">Inoperante</label>
+                <div class = "form__container">    
+                    <label class = "form__container__label" for="input">Médico de de Dia</label>
+                    <input type="text" placeholder="Médico de Dia" id ="med_dia" required>
                 </div>
-        
-                <div>
-                    <label for="input">Gerador de Energia</label>
-                    <input type="radio" name="gerador" value="opcao1" required>
-                    <label for="input">Operante</label>
-                    <input type="radio" name="gerador" value="opcao2" required>
-                    <label for="input">Parcialmente Operante</label>
-                    <input type="radio" name="gerador" value="opcao3" required>
-                    <label for="input">Inoperante</label>
+                
+                <div class = "form__container">
+                    <label class = "form__container__label" for="input">Adjunto ao Oficial de Dia</label>
+                    <input type="text" placeholder="Adjunto ao Oficial de Dia" id ="adjunto" required>
                 </div>
-        
-                <div>
-                    <label for="input">Elevador</label>
-                    <input type="radio" name="elevador" value="opcao1" required>
-                    <label for="input">Operante</label>
-                    <input type="radio" name="elevador" value="opcao2" required>
-                    <label for="input">Parcialmente Operante</label>
-                    <input type="radio" name="elevador" value="opcao3" required>
-                    <label for="input">Inoperante</label>
+                <div class = "form__container">
+                    <label class = "form__container__label" for="input">Comandante da Guarda</label>
+                    <input type="text" placeholder="Comandante da Guarda" id ="cmte_guarda" required>
                 </div>
-        
-                <div>
-                    <label for="input">Morgue/Capela</label>
-                    <input type="radio" name="morgue" value="opcao1" required>
-                    <label for="input">Operante</label>
-                    <input type="radio" name="morgue" value="opcao2" required>
-                    <label for="input">Parcialmente Operante</label>
-                    <input type="radio" name="morgue" value="opcao3" required>
-                    <label for="input">Inoperante</label>
-                </div>
-        
-                <div>
-                    <label for="input">Cofre</label>
-                    <input type="text" placeholder="Valor no Cofre" name="cofre" required>
-        
-                    <label for="input">Nível do Oxigênio</label>
-                    <input type="text" placeholder="Nível de Oxígênio" name="oxigenio" required><span>Bar</span>
+                <div class = "form__container">
+                    <label class = "form__container__label" for="input">Encarregado de Motorista</label>
+                    <input type="text" placeholder="Encarregado de Motorista" id ="encarregado" required>
                 </div>
 
-                <button>
-                    <span class="fi fi-ss-next"></span>
-                </button>
-        
-            </form>
-        </div>
-        
-    </body>
+            </div>
+
+            <hr>
+
+          
+
+            <div>
+                <div class = "form__container__radio alinhado__centro"> 
+                    <span></span>
+                    <span>Operante</span>
+                    <span>Parcialmente Operante</span>
+                    <span>Inoperante</span>
+                    
+                    
+                </div>
+
+                <div class = "form__container__radio">
+                    <label for="input">Fornecimento de Energia Elétrica</label> 
+                    <input type="radio" name="energia" value="opcao1" required>
+                    <input type="radio" name="energia" value="opcao2" required>
+                    <input type="radio" name="energia" value="opcao3" required>
+                   
+                </div>
+
+                <div class = "form__container__radio">
+                    <label for="input">Fornecimento de Água</label>
+                    <input type="radio" name="agua" value="opcao1" required>
+                    <input type="radio" name="agua" value="opcao2" required>
+                    <input type="radio" name="agua" value="opcao3" required>
+                </div>
+
+                <div class = "form__container__radio">
+                    <label for="input">Gerador de Energia</label>
+                    <input type="radio" name="gerador" value="opcao1" required>
+                    <input type="radio" name="gerador" value="opcao2" required>
+                    <input type="radio" name="gerador" value="opcao3" required>
+                </div>
+
+                <div class = "form__container__radio">
+                    <label for="input">Elevador</label>
+                    <input type="radio" name="elevador" value="opcao1" required>
+                    <input type="radio" name="elevador" value="opcao2" required>
+                    <input type="radio" name="elevador" value="opcao3" required>
+                </div>
+
+                <div class = "form__container__radio">
+                    <label for="input">Morgue/Capela</label>
+                    <input type="radio" name="morgue" value="opcao1" required>
+                    <input type="radio" name="morgue" value="opcao2" required>
+                    <input type="radio" name="morgue" value="opcao3" required>
+                </div>
+
+                <div class = "form__container">
+                    <label class = "form__container__label" for="input">Cofre (R$)</label>
+                    <input type="text" placeholder="Valor no Cofre" name="cofre" required>
+                </div>
+                <div class = "form__container">
+                    <label  class = "form__container__label" for="input">Nível do Oxigênio (Bar)</label>
+                    <input type="text" placeholder="Nível de Oxígênio" name="oxigenio" required>
+                </div>
+                
+                <div class = "alinhado__direita">
+                    <button class = "button__cancelar">
+                        Cancelar
+                    </button>
+                    
+                    <button class = "button__prosseguir" type="submit" onclick="gravarFormulario()">Próximo</button>
+                        
+
+                    
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
 </html>
