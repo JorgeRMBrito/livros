@@ -27,9 +27,9 @@
     
    
     <div>
-        <form>
+        <form id = "formulario_1">
             <div>
-                <div class = "form__container" id = "formulario_1">
+                <div class = "form__container" >
                     <label class = "form__container__label" for="input">Superior de Dia</label>
                     <input class =  "form__container__input" type="text" placeholder="Superior de Dia" id ="sup_dia" required>
                 </div>
@@ -69,47 +69,47 @@
 
                 <div class = "form__container__radio">
                     <label for="input">Fornecimento de Energia Elétrica</label> 
-                    <input type="radio" name="energia" value="opcao1" required>
-                    <input type="radio" name="energia" value="opcao2" required>
-                    <input type="radio" name="energia" value="opcao3" required>
+                    <input type="radio" name =  "energia" id ="energia" value="operante" required>
+                    <input type="radio" name =  "energia" id ="energia" value="parcialmente_operante" required>
+                    <input type="radio" name =  "energia" id ="energia" value="inoperante" required>
                    
                 </div>
 
                 <div class = "form__container__radio">
                     <label for="input">Fornecimento de Água</label>
-                    <input type="radio" name="agua" value="opcao1" required>
-                    <input type="radio" name="agua" value="opcao2" required>
-                    <input type="radio" name="agua" value="opcao3" required>
+                    <input type="radio" id ="agua" value="operante" required>
+                    <input type="radio" id ="agua" value="parcialmente_operante" required>
+                    <input type="radio" id ="agua" value="inoperante" required>
                 </div>
 
                 <div class = "form__container__radio">
                     <label for="input">Gerador de Energia</label>
-                    <input type="radio" name="gerador" value="opcao1" required>
-                    <input type="radio" name="gerador" value="opcao2" required>
-                    <input type="radio" name="gerador" value="opcao3" required>
+                    <input type="radio" id ="gerador" value="operante" required>
+                    <input type="radio" id ="gerador" value="parcialmente_operante" required>
+                    <input type="radio" id ="gerador" value="inoperante" required>
                 </div>
 
                 <div class = "form__container__radio">
                     <label for="input">Elevador</label>
-                    <input type="radio" name="elevador" value="opcao1" required>
-                    <input type="radio" name="elevador" value="opcao2" required>
-                    <input type="radio" name="elevador" value="opcao3" required>
+                    <input type="radio" id ="elevador" value="operante" required>
+                    <input type="radio" id ="elevador" value="parcialmente_operante" required>
+                    <input type="radio" id ="elevador" value="inoperante" required>
                 </div>
 
                 <div class = "form__container__radio">
                     <label for="input">Morgue/Capela</label>
-                    <input type="radio" name="morgue" value="opcao1" required>
-                    <input type="radio" name="morgue" value="opcao2" required>
-                    <input type="radio" name="morgue" value="opcao3" required>
+                    <input type="radio" id ="morgue" value="operante" required>
+                    <input type="radio" id ="morgue" value="parcialmente_operante" required>
+                    <input type="radio" id ="morgue" value="inoperante" required>
                 </div>
 
                 <div class = "form__container">
                     <label class = "form__container__label" for="input">Cofre (R$)</label>
-                    <input type="text" placeholder="Valor no Cofre" name="cofre" required>
+                    <input type="text" placeholder="Valor no Cofre" id="cofre" required>
                 </div>
                 <div class = "form__container">
                     <label  class = "form__container__label" for="input">Nível do Oxigênio (Bar)</label>
-                    <input type="text" placeholder="Nível de Oxígênio" name="oxigenio" required>
+                    <input type="text" placeholder="Nível de Oxígênio" id="oxigenio" required>
                 </div>
                 
                 <div class = "alinhado__direita">
@@ -117,7 +117,7 @@
                         Cancelar
                     </button>
                     
-                    <button class = "button__prosseguir" type="submit" onclick="gravarFormulario()">Próximo</button>
+                    <button class = "button__prosseguir" type="submit" onclick="gravarFormulario ()">Próximo</button>
                         
 
                     
